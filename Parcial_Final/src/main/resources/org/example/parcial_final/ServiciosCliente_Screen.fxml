@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/17.0.2-ea"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.parcial_final.ServiciosController"
+            stylesheets="@estilos.css">
+  <Label layoutX="418.0" layoutY="100"
+        styleClass="titulo-label" style="-fx-font-size: 24px; -fx-font-weight: bold;"
+         text="Sistema de Gestión de Transacciones"/>
+
+  <Button fx:id="btnClientes" layoutX="325.0" layoutY="230" mnemonicParsing="false" prefHeight="60.0"
+          prefWidth="250.0" text="Clientes"/>
+
+  <Button fx:id="btnCompras" layoutX="325.0" layoutY="330" mnemonicParsing="false" prefHeight="60.0" prefWidth="250.0"
+          text="Compras"/>
+
+  <Button fx:id="btnTarjetas" layoutX="675.0" layoutY="230" mnemonicParsing="false" prefHeight="60.0"
+          prefWidth="250.0" text="Tarjetas"/>
+
+  <Button fx:id="btnReportes" layoutX="675.0" layoutY="330" mnemonicParsing="false" prefHeight="60.0"
+          prefWidth="250.0" text="Reportes"/>
+
+  <Button fx:id="btnSalir" layoutX="525.0" layoutY="480" styleClass="btn-Salir" mnemonicParsing="false" prefHeight="60.0" prefWidth="200.0"
+          text="Salir"/>
+</AnchorPane>
