@@ -1,0 +1,6 @@
+Nombres: dfg
+Apellidos: dfgert
+DUI: 985
+Tarjeta: débito
+Saldo inicial: $3600.0
+N° de Tarjeta: 2092 3457 2352 0003

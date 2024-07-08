@@ -1,0 +1,12 @@
+Nombres: Gerardo 
+Apellidos: Valdez
+DUI: 321
+Tarjeta: crédito
+Saldo inicial: $500
+N° de Tarjeta: 1587 5531 4645 6247
+Nombres: Roberto Carlos
+Apellidos: Gomez Perez
+DUI: 321
+Tarjeta: crédito
+Saldo inicial: $500
+N° de Tarjeta: 0542 4556 8314 2259
