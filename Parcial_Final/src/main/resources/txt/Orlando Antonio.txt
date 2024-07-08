@@ -1,0 +1,7 @@
+Nombres: Orlando Antonio
+Apellidos: Valdez Sibrian
+Teléfono: 1234-12344
+Dirección: asfdasfasdv
+Tarjeta: crédito
+Saldo: $500
+N° de Tarjeta: 7582 5480 7981 8164

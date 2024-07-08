@@ -1,6 +1,0 @@
-Nombres: orlando
-Apellidos: valdez
-DUI: 123-4
-Tarjeta: crédito
-Saldo inicial: $500
-N° de Tarjeta: 1804 6798 1667 7565

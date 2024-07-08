@@ -1,6 +1,0 @@
-Nombres: orlan anto
-Apellidos: valdez sibrian
-DUI: 02
-Tarjeta: débito
-Saldo inicial: $60.0
-N° de Tarjeta: 4585 6362 7650 5123

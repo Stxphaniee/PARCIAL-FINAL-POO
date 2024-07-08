@@ -1,6 +1,0 @@
-Nombres: Jaime Alberto
-Apellidos: Ramirez
-DUI: 12345
-Tarjeta: crédito
-Saldo inicial: $500
-N° de Tarjeta: 1478 0178 0759 0631
