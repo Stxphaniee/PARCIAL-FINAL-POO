@@ -99,7 +99,7 @@ public class EditarInformacionController {
             String saldoStr = saldoField.getText();
 
             if (idCliente.isEmpty() || nombre.isEmpty() || apellido.isEmpty() || telefono.isEmpty() ||
-                    direccion.isEmpty() || fechaExpiracion.isEmpty() || saldoStr.isEmpty()) {
+                    direccion.isEmpty() || saldoStr.isEmpty()) {
                 showAlert(Alert.AlertType.ERROR, "Error de Validación", "Todos los campos son obligatorios.");
                 return;
             }
@@ -117,6 +117,7 @@ public class EditarInformacionController {
                 Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
                 conn = DriverManager.getConnection(DB_URL);
 
+                // Actualizar información del cliente
                 String sqlUpdateCliente = "UPDATE Clientes SET NombreCompleto = ?, Apellidos = ?, Direccion = ?, NumeroTelefono = ? WHERE ID = ?";
                 PreparedStatement pstmtUpdateCliente = conn.prepareStatement(sqlUpdateCliente);
                 pstmtUpdateCliente.setString(1, nombre);
@@ -127,18 +128,28 @@ public class EditarInformacionController {
 
                 int rowsUpdatedCliente = pstmtUpdateCliente.executeUpdate();
 
-                String sqlUpdateTarjeta = "UPDATE Tarjetas SET FechaExpiracion = ?, Saldo = ? WHERE ID_Cliente = ?";
-                PreparedStatement pstmtUpdateTarjeta = conn.prepareStatement(sqlUpdateTarjeta);
-                pstmtUpdateTarjeta.setString(1, fechaExpiracion);
-                pstmtUpdateTarjeta.setDouble(2, saldo);
-                pstmtUpdateTarjeta.setInt(3, Integer.parseInt(idCliente));
+                // Actualizar información de la tarjeta (si existe fecha de expiración)
+                if (!fechaExpiracion.isEmpty()) {
+                    String sqlUpdateTarjeta = "UPDATE Tarjetas SET FechaExpiracion = ?, Saldo = ? WHERE ID_Cliente = ?";
+                    PreparedStatement pstmtUpdateTarjeta = conn.prepareStatement(sqlUpdateTarjeta);
+                    pstmtUpdateTarjeta.setString(1, fechaExpiracion);
+                    pstmtUpdateTarjeta.setDouble(2, saldo);
+                    pstmtUpdateTarjeta.setInt(3, Integer.parseInt(idCliente));
 
-                int rowsUpdatedTarjeta = pstmtUpdateTarjeta.executeUpdate();
+                    int rowsUpdatedTarjeta = pstmtUpdateTarjeta.executeUpdate();
 
-                if (rowsUpdatedCliente > 0 && rowsUpdatedTarjeta > 0) {
-                    showAlert(Alert.AlertType.INFORMATION, "Éxito", "Información actualizada exitosamente.");
+                    if (rowsUpdatedCliente > 0 && rowsUpdatedTarjeta > 0) {
+                        showAlert(Alert.AlertType.INFORMATION, "Éxito", "Información actualizada exitosamente.");
+                    } else {
+                        showAlert(Alert.AlertType.ERROR, "Error", "No se pudo actualizar la información.");
+                    }
                 } else {
-                    showAlert(Alert.AlertType.ERROR, "Error", "No se pudo actualizar la información.");
+                    // Si no hay fecha de expiración, actualizar solo los datos del cliente
+                    if (rowsUpdatedCliente > 0) {
+                        showAlert(Alert.AlertType.INFORMATION, "Éxito", "Información actualizada exitosamente.");
+                    } else {
+                        showAlert(Alert.AlertType.ERROR, "Error", "No se pudo actualizar la información.");
+                    }
                 }
             } catch (Exception e) {
                 e.printStackTrace();
