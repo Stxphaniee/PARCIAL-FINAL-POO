@@ -1,0 +1,4 @@
+Reporte A - Compras realizadas por el cliente 5002 desde 2023-07-01 hasta 2024-07-09
+===============================================================
+Fecha: 2024-07-09T12:01:40, Monto: $245.00, Descripción: Celular x1
+Fecha: 2023-07-01T12:02:20, Monto: $478.00, Descripción: Computadora x1

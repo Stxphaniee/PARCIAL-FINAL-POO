@@ -1,0 +1,3 @@
+Reporte D - Clientes que han realizado compras con el facilitador Visa
+==================================================================
+Cliente: José Miguel, Compras: 2, Total Gastado: $723.00

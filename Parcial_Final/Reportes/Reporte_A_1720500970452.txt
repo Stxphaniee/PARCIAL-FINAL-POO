@@ -1,0 +1,3 @@
+Reporte A - Compras realizadas por el cliente 4003 desde 2024-07-08 hasta 2024-07-08
+===============================================================
+No se encontraron compras en el periodo especificado.

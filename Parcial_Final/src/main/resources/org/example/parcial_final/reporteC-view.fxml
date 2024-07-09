@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane stylesheets="@estilos.css" xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.parcial_final.ReporteCController">
+    <top>
+        <HBox alignment="TOP_RIGHT" BorderPane.alignment="TOP_RIGHT">
+            <Button fx:id="btnRegresar" prefHeight="35" prefWidth="100" styleClass="btn-salir" text="Regresar">
+                <font>
+                    <Font size="13.0" />
+                </font>
+                <HBox.margin>
+                    <Insets right="60.0" top="52.0" />
+                </HBox.margin>
+            </Button>
+        </HBox>
+    </top>
+    <center>
+        <VBox alignment="CENTER" fillWidth="false" spacing="15.0">
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="-20.0" />
+            </padding>
+            <Label text="Generar Reporte C" textFill="WHITE">
+                <font>
+                    <Font name="System Bold" size="14.0" />
+                </font>
+            </Label>
+            <TextField fx:id="clienteIdField" prefHeight="35" prefWidth="400" promptText="ID del Cliente" />
+            <Button fx:id="btnGenerar" prefHeight="35" prefWidth="150" text="Generar Reporte">
+                <font>
+                    <Font size="13.0" />
+                </font>
+            </Button>
+        </VBox>
+    </center>
+</BorderPane>
