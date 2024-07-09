@@ -1,0 +1,4 @@
+Reporte D - Clientes que han realizado compras con el facilitador Visa
+==================================================================
+Cliente: Alison Michelle , Compras: 1, Total Gastado: $100.00
+Cliente: Peña, Compras: 2, Total Gastado: $200.00

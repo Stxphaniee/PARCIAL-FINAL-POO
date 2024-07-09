@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane stylesheets="@estilos.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.parcial_final.ClienteController">
+    <top>
+        <HBox alignment="TOP_RIGHT">
+            <padding>
+                <Insets bottom="-10.0" left="20.0" right="62.0" top="55.0" />
+            </padding>
+            <Button fx:id="btnRegresar" prefHeight="35" prefWidth="100" styleClass="btn-salir" text="Regresar">
+            <font>
+               <Font size="13.0" />
+            </font></Button>
+        </HBox>
+    </top>
+    <center>
+        <VBox alignment="CENTER" fillWidth="false" spacing="15">
+            <padding>
+                <Insets bottom="40.0" left="20.0" right="20.0" top="-20.0" />
+            </padding>
+            <Label text="Registrar Cliente" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="14.0" />
+            </font></Label>
+            <TextField fx:id="nombreField" prefHeight="35" prefWidth="400" promptText="Nombre" />
+            <TextField fx:id="apellidoField" prefHeight="35" prefWidth="400" promptText="Apellido" />
+            <TextField fx:id="telefonoField" prefHeight="35" prefWidth="400" promptText="Teléfono" />
+            <TextField fx:id="direccionField" prefHeight="35" prefWidth="400" promptText="Dirección" />
+            <Button fx:id="btnRegistrar" prefHeight="35" prefWidth="100" text="Registrar">
+            <font>
+               <Font size="13.0" />
+            </font></Button>
+            <Button fx:id="btnVerUsuario" prefHeight="35" prefWidth="125" text="Ver mi usuario">
+            <font>
+               <Font size="13.0" />
+            </font></Button>
+            <Button fx:id="btnComprar" prefHeight="35" prefWidth="100" text="Comprar">
+            <font>
+               <Font size="13.0" />
+            </font></Button>
+        </VBox>
+    </center>
+</BorderPane>
