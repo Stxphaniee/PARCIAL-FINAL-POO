@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane stylesheets="@estilos.css" xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.parcial_final.MainController">
+
+    <center>
+        <VBox alignment="CENTER" spacing="20">
+            <padding>
+                <Insets bottom="20" left="20" right="20" top="20" />
+            </padding>
+            <Label text="¡Bienvenido!" textFill="WHITE">
+                <font>
+                    <Font name="System Bold" size="25" />
+                </font>
+            <VBox.margin>
+               <Insets bottom="50.0" />
+            </VBox.margin>
+            </Label>
+            <Button fx:id="btnCliente" prefHeight="50" prefWidth="200" text="Cliente">
+                <font>
+                    <Font name="System Bold" size="14.0" />
+                </font>
+            </Button>
+            <Button fx:id="btnServicio" prefHeight="50" prefWidth="200" text="Servicio">
+                <font>
+                    <Font name="System Bold" size="14.0" />
+                </font>
+            </Button>
+        </VBox>
+    </center>
+</BorderPane>

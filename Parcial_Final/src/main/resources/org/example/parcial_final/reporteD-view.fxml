@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane stylesheets="@estilos.css" xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.parcial_final.ReporteDController">
+    <top>
+        <HBox alignment="TOP_RIGHT" spacing="10" BorderPane.alignment="TOP_RIGHT">
+            <Button fx:id="btnRegresar" prefHeight="35" prefWidth="100" styleClass="btn-salir" text="Regresar">
+            <font>
+               <Font size="13.0" />
+            </font>
+            <HBox.margin>
+               <Insets right="60.0" top="52.0" />
+            </HBox.margin></Button>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+        </HBox>
+    </top>
+    <center>
+        <GridPane alignment="CENTER" BorderPane.alignment="CENTER">
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" />
+            </padding>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="Generar Reporte D" textFill="WHITE" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="0">
+                <font>
+                    <Font name="System Bold" size="14.0" />
+                </font>
+            <GridPane.margin>
+               <Insets bottom="20.0" />
+            </GridPane.margin>
+            </Label>
+            <Label text="Facilitador:" textFill="WHITE" GridPane.columnIndex="0" GridPane.rowIndex="1">
+            <font>
+               <Font name="System Bold" size="14.0" />
+            </font></Label>
+            <TextField fx:id="facilitadorField" prefHeight="35" prefWidth="200" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <GridPane.margin>
+               <Insets left="20.0" />
+            </GridPane.margin></TextField>
+            <Button fx:id="btnGenerarReporte" prefHeight="35" prefWidth="150" text="Generar Reporte" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+            <font>
+               <Font size="13.0" />
+            </font>
+            <GridPane.margin>
+               <Insets right="10.0" top="20.0" />
+            </GridPane.margin></Button>
+            <columnConstraints>
+                <ColumnConstraints />
+                <ColumnConstraints />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+            </rowConstraints>
+         <BorderPane.margin>
+            <Insets top="-10.0" />
+         </BorderPane.margin>
+        </GridPane>
+    </center>
+</BorderPane>

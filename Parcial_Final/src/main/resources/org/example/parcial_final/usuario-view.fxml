@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane stylesheets="@estilos.css" xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.parcial_final.UsuarioController">
+    <top>
+        <HBox alignment="TOP_RIGHT">
+            <Button fx:id="btnRegresar" prefWidth="100" prefHeight="35" text="Regresar" styleClass="btn-salir">
+                <font>
+                    <Font size="13.0" />
+                </font>
+                <HBox.margin>
+                    <Insets right="62.0" top="55.0" />
+                </HBox.margin>
+            </Button>
+        </HBox>
+    </top>
+    <center>
+        <VBox alignment="CENTER" fillWidth="false" spacing="20">
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="-25.0" />
+            </padding>
+            <Label text="Ver Información del Usuario" textFill="WHITE">
+                <font>
+                    <Font name="System Bold" size="14.0" />
+                </font>
+            </Label>
+            <TextField fx:id="idField" prefHeight="35" prefWidth="400" promptText="ID del Cliente" />
+            <Button fx:id="btnBuscar" text="Buscar">
+                <font>
+                    <Font size="13.0" />
+                </font>
+            </Button>
+            <Label fx:id="infoLabel" textFill="WHITE">
+                <font>
+                    <Font name="System Bold" size="14.0" />
+                </font>
+            </Label>
+        </VBox>
+    </center>
+</BorderPane>
